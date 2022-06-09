@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans:wght@300&family=Style+Script&display=swap"
+        rel="stylesheet" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="mediaqueries.css">
+    <title>elauxy</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        body {
+            background-color: rgb(253 251 245);
+        }
+
+        nav span,
+        nav ul,
+        nav img {
+            display: flex;
+        }
+
+        nav {
+            border: 2px solid black;
+            height: 11vh;
+            width: 100vw;
+            background-color: white;
+        }
+
+        nav ul {
+            border-left: 1px solid black;
+            border-right: 1px solid black;
+            width: 60%;
+            margin: auto;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin-right: 2rem;
+        }
+
+        nav ul li:hover {
+            cursor: pointer;
+        }
+
+        #webname {
+            width: 10%;
+            position: absolute;
+            top: 16px;
+            left: 140px;
+            font-size: 2rem;
+            font-family: 'Dancing Script', cursive;
+        }
+
+        #logo {
+            width: 7%;
+            position: absolute;
+            top: 20px;
+            left: 100px;
+        }
+
+        div img {
+            width: 34px;
+        }
+
+        #user {
+            position: absolute;
+            right: 158px;
+            top: 19px;
+            width: 27px;
+        }
+
+        #bag {
+            position: absolute;
+            right: 101px;
+            top: 22px;
+            width: 20px
+        }
+
+        #product {
+            width: 650px;
+            height: 600px;
+        }
+
+        #product img {
+            width: 403px;
+            position: relative;
+            left: 185px;
+            top: 56px;
+        }
+
+        #part2 {
+            width: 500px;
+            height: 500px;
+            position: absolute;
+            left: 720px;
+            top: 137px;
+        }
+
+        #part2 img {
+            width: 80px;
+        }
+
+        #review {
+            font-size: 10px;
+            position: relative;
+            top: -5px;
+            left: 10px;
+        }
+
+        #part2 h6 {
+            font-size: 17px;
+        }
+
+        #rs {
+            font-size: 16px;
+        }
+
+        #qty {
+            border: 1px solid rgb(92, 91, 91);
+            padding: 4px 8px;
+        }
+
+        #qtyleft {
+            color: rgb(255, 72, 0);
+            font-size: 9px;
+            position: relative;
+            top: 10px;
+        }
+
+        #btn,
+        #btn2 {
+            position: relative;
+            top: 28px;
+            width: 250px;
+            padding: 10px 0px;
+            font-size: 0.7rem;
+        }
+
+        #btn {
+            background-color: rgb(253 251 245);
+            border: 1px solid black;
+            border-radius: 3px;
+        }
+
+        #btn2 {
+            background-color: black;
+            color: white;
+            border-radius: 3px;
+            margin-top: 14px;
+        }
+
+        #delivery,
+        #deltime {
+            position: relative;
+            top: 42px;
+            font-size: 0.75rem;
+        }
+
+        #deltime {
+            color: rgb(253, 145, 22);
+        }
+
+        #downline {
+            position: relative;
+            top: 68px;
+        }
+
+        #part2 ul {
+            position: relative;
+            top: 85px;
+            left: 16px;
+        }
+
+        #part3 {
+            width: 650px;
+            height: 350px;
+            margin-left: 100px;
+        }
+
+        .popup {
+            padding: 30px 10px;
+        }
+
+        #operator1 {
+            position: relative;
+            left: 502px;
+        }
+
+        #operator2 {
+            position: relative;
+            left: 495px;
+        }
+
+        #operator3 {
+            position: relative;
+            left: 402px;
+        }
+
+        #part4 {
+            background-color: white;
+            height: 1200px;
+        }
+
+        #part4 h1 {
+            text-align: center;
+            position: relative;
+            top: 80px;
+            font-size: 2.2rem;
+        }
+
+        #midelement {
+            position: relative;
+            top: 126px;
+            left: 345px;
+        }
+
+        #rate {
+            font-size: 100px;
+            font-weight: 600;
+            position: relative;
+            left: -97px;
+        }
+
+        #rev {
+            position: relative;
+            left: 154px;
+            top: -4px;
+        }
+
+        #midelement img {
+            position: relative;
+            left: 148px;
+            width: 100px;
+        }
+
+        #btn3 {
+            position: relative;
+            left: 316px;
+            background-color: black;
+            color: white;
+            border-radius: 4px;
+            padding: 10px 47px;
+            font-size: 0.7rem;
+        }
+
+        #part4-2 {
+            width: 700px;
+            position: relative;
+            top: 190px;
+            left: 240px;
+        }
+
+        #part4-2 h2 {
+            margin-bottom: 26px;
+        }
+
+        #part4-2 img {
+            margin-top: 14px;
+            width: 70px;
+        }
+
+        #span2 {
+            position: relative;
+            left: 380px;
+        }
+
+        #part4-2 p {
+            margin-top: 20px;
+        }
+
+        #further {
+            position: relative;
+            top: 242px;
+            left: 572px;
+            width: 132px;
+
+        }
+
+        #part5 h1 {
+            text-align: center;
+            margin-top: 70px;
+        }
+
+        #img1,
+        #img2,
+        #img3,
+        #img4 {
+            width: 200px;
+        }
+
+        #img1 {
+            margin-left: 200px;
+            border-radius: 5px;
+        }
+
+        #img2,
+        #img3,
+        #img4 {
+            margin: 0px 1px;
+            margin-top: 48px;
+            border-radius: 5px;
+        }
+
+        #spann1 {
+            position: relative;
+            left: -200px;
+            top: 20px;
+        }
+
+        #spann2 {
+            position: relative;
+            left: -207px;
+            top: 20px;
+        }
+
+        #spann3 {
+            position: relative;
+            left: -209px;
+            top: 20px;
+        }
+
+        #spann4 {
+            position: relative;
+            left: -205px;
+            top: 20px;
+        }
+
+        #rs2 {
+            position: relative;
+            top: 53px;
+            right: 341px;
+            font-weight: bold;
+        }
+
+        #rs3 {
+            position: relative;
+            top: 53px;
+            right: 292px;
+            font-weight: bold;
+        }
+
+        #rs4 {
+            position: relative;
+            top: 53px;
+            right: 284px;
+            font-weight: bold;
+        }
+
+        #part5 {
+            height: 400px;
+        }
+
+        #user,
+        #bag,
+        #webname,
+        #logo,
+        #qty,
+        #btn,
+        #btn2,
+        #btn3,
+        #operator1,
+        #operator2,
+        #operator3,
+        #further,
+        #img1,
+        #img2,
+        #img3,
+        .popup:hover {
+            cursor: pointer;
+        }
+
+        #btn:hover {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>Shampoo</li>
+            <li>Conditioner</li>
+            <li>Hair mask</li>
+            <li>Shower gel</li>
+            <li>Liquid soap</li>
+            <li>About</li>
+        </ul>
+        <img src="logo or images/user.png" alt="" id="user"> <!--  This is for user logo -->
+        <img src="logo or images/bag.png" alt="" id="bag"> <!--  This is for cart -->
+    </nav>
+    <div id="webname">elauxy</div>
+    <div id="logo"><img src="logo or images/infinity.png" alt=""></div>
+
+    <!-- Section 2 -->
+    <div id="product"><img src="logo or images/product.png" alt=""></div>
+
+    <div id="part2">
+        <img src="logo or images/ratings.png" alt=""><span id="review">2611 reviews</span>
+        <h6>Kertin frizzy hair Shampoo - Sairo</h6><br><br>
+        <span id="rs"> ₹ 650.00</span> <br><br><br>
+        <span id="qty"> - &nbsp;&nbsp;&nbsp; 1 &nbsp;&nbsp;&nbsp; +</span><br>
+        <span id="qtyleft">ONLY 5 LEFT IN STOCK</span><br>
+        <button id="btn">ADD TO CART</button><br>
+        <button id="btn2">BUY IT NOW</button><br>
+        <span id="delivery">For delivery between Saturday,May 21 and Thursday,May 26. </span><br>
+        <span id="deltime">Order within 8 hrs and 58 min.</span><br>
+        <span id="downline">Here why you will love it</span>
+        <ul>
+            <li>Smells amazing</li>
+            <li>Deep cleanses</li>
+            <li>Provides hydration</li>
+            <li>Enriched with naturally derived ingredients like Aloe Vera</li>
+            <li>Thoughtfully curated for all skin types</li>
+        </ul>
+    </div>
+    <!-- Section 3 -->
+    <div id="part3">
+        <hr>
+        <details>
+            <summary class="popup">Specification <span id="operator1">+</span></summary>
+            <p>Trusted by Professionals. Biolage SMOOTHPROOF Deep Smoothing 6-in1 Hair Serum is infused with avocado and
+                grape seed oils, this non-sticky formula gently envelops hair to control frizz and seal in smoothness
+                without weighing it down.</p>
+        </details>
+        <hr>
+        <details>
+            <summary class="popup">Usage & Care <span id="operator2">+</span></summary>
+            <p>Work a small amount of product in hands and apply evenly through damp hair. Blow-dry or style as desired.
+                You can use your SMOOTHPROOF Deep Smoothing 6-1 Hair Serum with deep conditioning, styling, a hair cut,
+                a blow dry, hair color and after straightening.</p>
+        </details>
+        <hr>
+        <details>
+            <summary class="popup">Return | Warranty | Shipping <span id="operator3">+</span></summary>
+            <p>This item is eligible for free replacement, within 7 days of delivery, in an unlikely event of damaged,
+                defective or different item delivered to you. Please keep the item in its original condition.</p>
+        </details>
+        <hr>
+    </div>
+
+    <!-- Section 4 -->
+    <div id="part4">
+        <h1>What our Customers are saying</h1>
+        <h1>Reviews from real users</h1>
+        <div id="midelement">
+            <span id="rate">5.0</span>
+            <img src="logo or images/userratings.png" alt="">
+            <span id="rev">(2611 reviews)</span>
+            <button id="btn3">WRITE REVIEW</button>
+        </div>
+
+        <div id="part4-2">
+            <h2>Incredible !</h2>
+            <span id="span1">Govind maithil(Verified Buyer)</span><span id="span2">Monday,17 May 2022</span><br>
+            <img src="logo or images/userratings.png" alt="">
+            <p>It's better than the livon serum that I used earlier. Scent is really nice, and the texture!!! damn...
+                It's so smooth... like I used to take three pumps of livon for my hair to make them look smooth but this
+                Biolage serum is 😍 loveee... The quantity is enough so that you can use it for at least more than three
+                months. I used this for two months and not even the half of this bottle is empty.</p>
+        </div><br><br><br>
+        <div id="part4-2">
+            <h2>Wow Wow Wow !!</h2>
+            <span id="span1">Ameen mansoori(Verified Buyer)</span><span id="span2">Monday,17 May 2022</span><br>
+            <img src="logo or images/userratings.png" alt="">
+            <p>This product is good for curly hair, and nice scent and giving also soft hair, this is worth full
+                product,
+                I am already using like strex hair serum , 1st 5 days is good but suddenly hair fall starting....
+                But it is not worth full..Now I am using Biolage smooth proof deep serum is soooo good and no hair is
+                happen and feel happy 😊</p>
+        </div><br><br><br>
+        <div id="part4-2">
+            <h2>Awesome..</h2>
+            <span id="span1">Aman Rajput(Verified Buyer)</span><span id="span2">Monday,17 May 2022</span><br>
+            <img src="logo or images/userratings.png" alt="">
+            <p>After having tried most of hair serum i have come to live this the most it makes my hair so soft after
+                hair wash and it doesn’t make your hair frizzy at all stays like that until your mext hairwash this is
+                indeed the best hair serum.Me and my sister absolutely love this serum. It's our second bottle!
+                No matter what shampoo and conditioner you're using, if you apply this serum your hair will look lot
+                more presentable</p>
+        </div>
+        <img src="logo or images/further.png" alt="" id="further">
+    </div>
+
+    <!-- Section 5 -->
+    <div id="part5">
+        <h1>Other Top Rated Products</h1>
+        <span><img src="logo or images/1stproduct.png" alt="" id="img1"></span>
+        <span id="spann1">Moisturing Lip Balm</span>
+        <span id="rs2">₹ 230</span>
+        <span><img src="logo or images/2ndproduct.png" alt="" id="img2"></span>
+        <span id="spann2">Body Butter</span>
+        <span id="rs3">₹ 465</span>
+        <span><img src="logo or images/3rdproduct.png" alt="" id="img3"></span>
+        <span id="spann3">Face Scrub</span>
+        <span id="rs4">₹ 650</span>
+    </div>
+</body>
+
+</html>
